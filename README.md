@@ -77,14 +77,14 @@ Now, it's the time to perform DBSCAN with eps and minPts that we have found abov
 
 we need to determine the cluster (based on pc_df) for each hospital where they belong. Then determine the value of "sales12","rbeds","hip12","knee12", and "femur12" for each cluster for each clustering method (e.g. k-means, hierarchical, DBSCAN). To do this, we need to run the following lines:
 
-pc_df$kmeans <- k.means.fit$cluster
-pc_df $hclust <- groups # these groups are created in hierarchical clustering
-pc_df $db <- db$cluster
-pc_df $hid <- nc_data$hid # Add hospital id to pc_df data
-final_data <- merge(x=pc_df, y=nc_data, key="hid")
-aggregate(final_data[,c("sales12","rbeds","hip12","knee12","femur12")], list(final_data$kmeans), mean)
-aggregate(final_data[,c("sales12","rbeds","hip12","knee12","femur12")], list(final_data$hclust), mean)
-aggregate(final_data[,c("sales12","rbeds","hip12","knee12","femur12")], list(final_data$db), mean)
+- pc_df$kmeans <- k.means.fit$cluster
+- pc_df $hclust <- groups # these groups are created in hierarchical clustering
+- pc_df $db <- db$cluster
+- pc_df $hid <- nc_data$hid # Add hospital id to pc_df data
+- final_data <- merge(x=pc_df, y=nc_data, key="hid")
+- aggregate(final_data[,c("sales12","rbeds","hip12","knee12","femur12")], list(final_data$kmeans), mean)
+- aggregate(final_data[,c("sales12","rbeds","hip12","knee12","femur12")], list(final_data$hclust), mean)
+- aggregate(final_data[,c("sales12","rbeds","hip12","knee12","femur12")], list(final_data$db), mean)
 
 I found reference of this from my Advanced Business Analytics course.
 
