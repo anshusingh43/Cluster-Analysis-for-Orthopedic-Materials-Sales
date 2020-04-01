@@ -108,6 +108,8 @@ Looking at the aggregate of the above selected clusters in each method, we can c
 
 And that is how, we found our cluster to target for the orthopedic material sales.
 
+Any suggestions or comments are welcome at anshusingh7091994@gmail.com.
+
 
 
 
